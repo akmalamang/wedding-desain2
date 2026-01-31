@@ -1,4 +1,5 @@
 import React from 'react';
+import bunga1 from '../assets/image/bunga-1.png';
 
 const Doarestu = () => {
   return (
@@ -28,7 +29,7 @@ const Doarestu = () => {
       {/* Decorative Elements */}
       <div className="flex justify-center items-center mt-6 space-x-4 flex-wrap mb-4">
         {[...Array(5)].map((_, i) => (
-          <img key={i} src="/image/bunga-1.png" alt="bunga" className={`w-16 h-16 transform ${i % 2 === 0 ? '-rotate-6 translate-y-1' : 'rotate-6 -translate-y-1'} sm:w-20 sm:h-20`} data-fade="up" />
+          <img key={i} src={bunga1} alt="bunga" className={`w-16 h-16 transform ${i % 2 === 0 ? '-rotate-6 translate-y-1' : 'rotate-6 -translate-y-1'} sm:w-20 sm:h-20`} data-fade="up" />
         ))}
       </div>
     </div>

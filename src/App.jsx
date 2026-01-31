@@ -10,6 +10,15 @@ import Doarestu from './components/Doarestu.jsx';
 import Footer from './components/Footer.jsx';
 import useFadeInOnScroll from './hooks/useFadeInOnScroll.jsx';
 import TypingText from './hooks/TypingText.jsx';
+import bungaKuning1 from './assets/image/bunga-kuning-1.png';
+import bungaKuning2 from './assets/image/bunga-kuning-2.png';
+import profilDepan from './assets/image/cople-gambar.jpg';
+import bungaPink from './assets/image/bunga-1.png';
+import bungaBiru from './assets/image/bunga-biru-1.png';
+import bungaKuning3 from './assets/image/bunga-kuning-3.png';
+import music from './assets/image/music.png';
+import silent from './assets/image/silent.png';
+import akadAudio from './assets/akad.mp3';
 
 function App() {
   useFadeInOnScroll();
@@ -71,26 +80,26 @@ function App() {
           <motion.div key="content" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.2, ease: 'easeOut' }} className="relative z-10">
             {/* header bunga */}
             <div className="flex justify-between">
-              <img src="/image/bunga-kuning-2.png" alt="" data-fade="left" />
-              <img src="/image/bunga-kuning-1.png" alt="" data-fade="right" />
+              <img src={bungaKuning2} alt="" data-fade="left" />
+              <img src={bungaKuning1} alt="" data-fade="right" />
             </div>
 
             {/* profile wedding */}
             <div>
               <div className="w-62.75 h-66.75 mx-auto rounded-full">
-                <img src={data.profil} alt="foto profil" className="w-full h-full object-cover rounded-full" data-fade="up" />
+                <img src={profilDepan} alt="foto profil" className="w-full h-full object-cover rounded-full" data-fade="up" />
               </div>
             </div>
 
             {/* nama pasangan */}
             <div className="flex justify-between">
-              <img src="/image/bunga-1.png" alt="" className="w-31.25 sm:w-[250px]" data-fade="left" />
-              <img src="/image/bunga-1.png" alt="" className="w-31.25 sm:w-[250px]" data-fade="right" />
+              <img src={bungaPink} alt="" className="w-31.25 sm:w-[250px]" data-fade="left" />
+              <img src={bungaPink} alt="" className="w-31.25 sm:w-[250px]" data-fade="right" />
             </div>
 
             <div className="text-center -mt-8 font-poppins xl:mt-[-200px]">
               <p className="sm:text-[20px]">Kepada</p>
-              <p className="text-2xl sm:text-3xl">{data.tamuUndangan}</p>
+              <p className="text-2xl sm:text-3xl ">{data.tamuUndangan}</p>
               <p className="mt-6 text-[16px] sm:text-[18px]">Kami mengundang anda untuk menghadiri acara pernikahan dari</p>
             </div>
 
@@ -123,17 +132,17 @@ function App() {
             </div>
 
             <div className="flex flex-2 justify-between p-2">
-              <img src="/image/bunga-biru-1.png" alt="" className="sm:w-[100px]" data-fade="left" />
-              <img src="/image/bunga-kuning-3.png" alt="" className="sm:w-[100px]" data-fade="right" />
+              <img src={bungaBiru} alt="" className="sm:w-[100px]" data-fade="left" />
+              <img src={bungaKuning3} alt="" className="sm:w-[100px]" data-fade="right" />
             </div>
 
             {/* Tombol musik */}
             <div className="fixed bottom-4 right-4 z-50 cursor-pointer" onClick={handleMusicToggle}>
-              <img src={isPlaying ? '/image/music.png' : '/image/silent.png'} alt="" className={`w-[50px] transition-transform duration-300 ${isPlaying ? 'animate-spin' : ''}`} />
+              <img src={isPlaying ? music : silent} alt="" className={`w-[50px] transition-transform duration-300 ${isPlaying ? 'animate-spin' : ''}`} />
             </div>
 
             {/* Audio */}
-            <audio ref={audioRef} src="/akad.mp3" loop />
+            <audio ref={audioRef} src={akadAudio} loop />
 
             {/* Komponen lain */}
             <LoveSection />

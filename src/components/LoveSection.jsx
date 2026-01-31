@@ -1,5 +1,8 @@
 import React from 'react';
 import useFadeInOnScroll from '../hooks/useFadeInOnScroll';
+import copleGambar from '../assets/image/cople-gambar.jpg';
+import bungaKuning3 from '../assets/image/bunga-kuning-3.png';
+import bunga1 from '../assets/image/bunga-1.png';
 
 export default function CoupleSection() {
   useFadeInOnScroll();
@@ -32,13 +35,13 @@ export default function CoupleSection() {
 
       {/* Kanan - Gambar */}
       <div className="relative w-1/2 flex justify-center">
-        <img src="/public/image/cople-gambar.jpg" alt="pasangan" className="w-[140px] h-[200px] object-cover rounded-md shadow-md sm:w-[200px] sm:h-[260px]" data-fade="up" />
+        <img src={copleGambar} alt="pasangan" className="w-[140px] h-[200px] object-cover rounded-md shadow-md sm:w-[200px] sm:h-[260px]" data-fade="up" />
 
         {/* bunga atas kanan */}
-        <img src="/public/image/bunga-kuning-3.png" alt="bunga atas" className="absolute -top-6 right-[-10px] w-[71px] rotate-6 sm:right-[40px] lg:right-[110px] xl:right-[180px]" data-fade="right" />
+        <img src={bungaKuning3} alt="bunga atas" className="absolute -top-6 right-[-10px] w-[71px] rotate-6 sm:right-[40px] lg:right-[110px] xl:right-[180px]" data-fade="right" />
 
         {/* bunga bawah kiri */}
-        <img src="/public/image/bunga-1.png" alt="bunga bawah" className="absolute bottom-[-33px] left-[-21px] w-[73px] sm:left-[40px] lg:left-[110px] xl:left-[180px]" data-fade="left" />
+        <img src={bunga1} alt="bunga bawah" className="absolute bottom-[-33px] left-[-21px] w-[73px] sm:left-[40px] lg:left-[110px] xl:left-[180px]" data-fade="left" />
       </div>
     </div>
   );

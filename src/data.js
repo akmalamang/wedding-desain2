@@ -1,5 +1,5 @@
 const dataWedding = {
-  profil: '/public/image/cople-gambar.jpg',
+  profil: '/src/assets/pictWedding/cople-gambar-2.jpg',
   tamuUndangan: 'Andri & Istri',
   timeAkad: 'Sabtu, 20 Oktober 2024, Pukul 09.00 WIB',
   timeResepsi: 'Sabtu, 20 Oktober 2024, Pukul 11.00 WIB',

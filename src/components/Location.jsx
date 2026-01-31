@@ -1,5 +1,8 @@
 import React from 'react';
 import dataWedding from '../data';
+import Maps from '../assets/image/maps.png';
+import bungaBiruAlamat from '../assets/image/bunga-biru-png.png';
+import bunga1Alamat from '../assets/image/bunga-1-alamat.png';
 
 const Location = () => {
   return (
@@ -27,7 +30,7 @@ const Location = () => {
         {/* google maps */}
         <div className="">
           <a href="">
-            <img src="/public/image/maps.png" alt="" data-fade="right" />
+            <img src={Maps} alt="" data-fade="right" />
           </a>
         </div>
       </div>
@@ -56,9 +59,9 @@ const Location = () => {
 
       {/* gambar bunga bawah */}
       <div className="flex justify-center items-center mt-4">
-        <img src="/public/image/bunga-biru-png.png" alt="" className="w-[111.72px]" data-fade="left" />
-        <img src="/public/image/bunga-1-alamat.png" alt="" className="w-[111.72px]" data-fade="up" />
-        <img src="/public/image/bunga-1-alamat.png" alt="" className="w-[111.72px]" data-fade="right" />
+        <img src={bungaBiruAlamat} alt="" className="w-[111.72px]" data-fade="left" />
+        <img src={bunga1Alamat} alt="" className="w-[111.72px]" data-fade="up" />
+        <img src={bunga1Alamat} alt="" className="w-[111.72px]" data-fade="right" />
       </div>
     </div>
   );

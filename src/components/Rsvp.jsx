@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import bungaHiasan from '../assets/image/bunga-1-alamat.png';
 
 const Rsvp = () => {
   const [riwayat, setRiwayat] = useState([]);
@@ -37,7 +38,7 @@ const Rsvp = () => {
   return (
     <div className="relative font-poppins mt-20 px-4">
       {/* 🌸 Gambar bunga hiasan */}
-      <img src="/image/bunga-1-alamat.png" alt="hiasan bunga" className="absolute -top-10 right-4 w-20 sm:right-15 sm:top-0 sm:w-30 lg:right-30 xl:right-80" data-fade="right" />
+      <img src={bungaHiasan} alt="hiasan bunga" className="absolute -top-10 right-4 w-20 sm:right-15 sm:top-0 sm:w-30 lg:right-30 xl:right-80" data-fade="right" />
 
       {/* 📝 Judul */}
       <div className="text-center mb-6">

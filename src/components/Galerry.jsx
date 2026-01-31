@@ -1,5 +1,7 @@
 import React from 'react';
 import gambar from '../gambar.js';
+import bunga1 from '../assets/image/bunga-1.png';
+import bungaKuning3 from '../assets/image/bunga-kuning-3.png';
 
 function Gallery() {
   const { gallery } = gambar;
@@ -24,15 +26,15 @@ function Gallery() {
         ))}
       </div>
       {/*hiasan bunga - 1*/}
-      <img src="/public/image/bunga-1.png" alt="" className="w-[71px] absolute top-2 sm:left-[35px] lg:left-[98px] xl:left-[181px]" data-fade="left" />
+      <img src={bunga1} alt="" className="w-[71px] absolute top-2 sm:left-[35px] lg:left-[98px] xl:left-[181px]" data-fade="left" />
       {/*hiasan bunga - 2*/}
-      <img src="/public/image/bunga-kuning-3.png" alt="" className="w-[71px] h-[72px] absolute top-2 right-0 sm:right-[31px] lg:right-[99px] xl:right-[171px]" data-fade="right" />
+      <img src={bungaKuning3} alt="" className="w-[71px] h-[72px] absolute top-2 right-0 sm:right-[31px] lg:right-[99px] xl:right-[171px]" data-fade="right" />
       {/*hiasan bunga - 3*/}
-      <img src="/public/image/bunga-kuning-3.png" alt="" className="w-[71px] h-[72px] absolute bottom-40 right-0 sm:bottom-88 sm:right-20 lg:right-47 xl:right-90" data-fade="right" />
+      <img src={bungaKuning3} alt="" className="w-[71px] h-[72px] absolute bottom-40 right-0 sm:bottom-88 sm:right-20 lg:right-47 xl:right-90" data-fade="right" />
       {/*hiasan bunga - 4*/}
-      <img src="/public/image/bunga-1.png" alt="" className="w-[71px] absolute -bottom-8 left-0 sm:left-10 lg:left-25 xl:left-45" data-fade="left" />
+      <img src={bunga1} alt="" className="w-[71px] absolute -bottom-8 left-0 sm:left-10 lg:left-25 xl:left-45" data-fade="left" />
       {/*hiasan bunga - 5*/}
-      <img src="/public/image/bunga-kuning-3.png" alt="" className="w-[71px] h-[72px] absolute -bottom-4 right-0 sm:right-8 lg:right-45" data-fade="right" />
+      <img src={bungaKuning3} alt="" className="w-[71px] h-[72px] absolute -bottom-4 right-0 sm:right-8 lg:right-45" data-fade="right" />
     </div>
   );
 }
