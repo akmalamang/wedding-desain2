@@ -19,6 +19,7 @@ import bungaKuning3 from './assets/image/bunga-kuning-3.png';
 import music from './assets/image/music.png';
 import silent from './assets/image/silent.png';
 import akadAudio from './assets/akad.mp3';
+import BottomNav from './components/BottomNav.jsx';
 
 function App() {
   useFadeInOnScroll();
@@ -137,7 +138,7 @@ function App() {
             </div>
 
             {/* Tombol musik */}
-            <div className="fixed bottom-4 right-4 z-50 cursor-pointer" onClick={handleMusicToggle}>
+            <div className="fixed bottom-16 right-4 z-50 cursor-pointer" onClick={handleMusicToggle}>
               <img src={isPlaying ? music : silent} alt="" className={`w-[50px] transition-transform duration-300 ${isPlaying ? 'animate-spin' : ''}`} />
             </div>
 
@@ -145,13 +146,35 @@ function App() {
             <audio ref={audioRef} src={akadAudio} loop />
 
             {/* Komponen lain */}
-            <LoveSection />
-            <Location />
-            <Galerry />
-            <Rsvp />
-            <Rek />
-            <Doarestu />
-            <Footer />
+            {/* Love Section Component */}
+            <section id="love-section">
+              <LoveSection />
+            </section>
+            {/* Location Component */}
+            <section id="location-section">
+              <Location />
+            </section>
+            {/* Galerry Component */}
+            <section id="gallery-section">
+              <Galerry />
+            </section>
+            {/* Rsvp Component */}
+            <section id="rsvp-section">
+              <Rsvp />
+            </section>
+            {/* data rekening */}
+            <section id="rek-section">
+              <Rek />
+            </section>
+            {/* Ayat Suci */}
+            <section id="doa-section">
+              <Doarestu />
+            </section>
+            {/* Footer Component */}
+            <section>
+              <Footer />
+            </section>
+            <BottomNav />
           </motion.div>
         )}
       </AnimatePresence>
