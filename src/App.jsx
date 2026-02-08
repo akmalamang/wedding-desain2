@@ -51,7 +51,7 @@ function App() {
   };
 
   return (
-    <div className="containerr overflow-x-hidden relative">
+    <div className="containerr overflow-x-hidden pb-13.5 relative">
       {/* === Overlay “Buka Undangan” === */}
       <AnimatePresence>
         {!isOpened && (
@@ -64,7 +64,7 @@ function App() {
             </motion.p>
             <motion.button
               onClick={handleOpenInvitation}
-              className="bg-[#e0b973] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#d5a85d] transition-all duration-300 cursor-pointer"
+              className="bg-[#e0b973] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#d5a85d] transition-all duration-300 cursor-pointer hover:transform hover:scale-105 shadow-lg font-poppins"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -177,6 +177,10 @@ function App() {
             <BottomNav />
           </motion.div>
         )}
+        {/* === Parallax Bunga (background) === */}
+        <img src={bungaKuning3} alt="bunga kiri atas" className="absolute top-10 left-4 w-[80px] opacity-80 parallax-x z-0" />
+
+        <img src={bungaKuning3} alt="bunga kanan bawah" className="absolute top-10 right-6 w-[100px] opacity-75 parallax-y z-0" />
       </AnimatePresence>
     </div>
   );

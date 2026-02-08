@@ -91,3 +91,36 @@
     opacity: 0;
   }
 }
+
+@keyframes parallaxFloatX {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes parallaxFloatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* kelas bantu untuk efek geral  */
+parallax-x {
+  animation: parallaxFloatX 6s ease-in-out infinite;
+}
+
+parallax-y {
+  animation: paralallaxFloatY 6s ease-in-out infinite;
+}
